@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>question-answers task</title>
-  <style>
-.flex-div{
-  margin: 100px 0;
-  display: flex;
-  /* justify-content: center; */
-  border: 2px solid red;
-  height: 500px;
-  padding: 10px;
-  width: 50%;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>question-answers task</title>
+    <style>
+      .flex-div {
+        margin: 100px 0;
+        display: flex;
+        /* justify-content: center; */
+        border: 2px solid red;
+        height: 500px;
+        padding: 10px;
+        width: 50%;
+      }
 
-.one-div{
-  border: 2px solid rgba(122, 20, 218, 0);
-  height: auto;
-  width: 50%;
-}
+      .one-div {
+        border: 2px solid rgba(122, 20, 218, 0);
+        height: auto;
+        width: 50%;
+      }
 
-.second-div{
-  border: 3px solid rgb(218, 215, 27);
-  height: auto;
-  width: 50%; 
-  background-color: antiquewhite;
-}
-.ques-div,
-.ans-div{
- border: 2px dashed pink; 
- text-align: center;
- padding: 12px;
-}
-.ques-div{
-  text-transform: capitalize;
-}
-.ans-div{
-  display: none;
-  text-align: justify;
-  padding: 12px 20px;
-}
-.ans-div::first-line{
-  font-weight: 600;
-  text-align: center;
-  text-transform: capitalize;
-}
+      .second-div {
+        border: 3px solid rgb(218, 215, 27);
+        height: auto;
+        width: 50%;
+        background-color: antiquewhite;
+      }
+      .ques-div,
+      .ans-div {
+        border: 2px dashed pink;
+        text-align: center;
+        padding: 12px;
+      }
+      .ques-div {
+        text-transform: capitalize;
+      }
+      .ans-div {
+        display: none;
+        text-align: justify;
+        padding: 12px 20px;
+      }
+      .ans-div::first-line {
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+      }
 
-.fa-question-circle{
-  text-align: right;
-  font-size: larger;
-}
-
-/* .second-div{
+      .fa-question-circle {
+        text-align: right;
+        font-size: larger;
+      }
+      .show {
+        display: block;
+      }
+      /* .second-div{
   position: relative;
 }
 
@@ -62,110 +70,92 @@
 position: absolute;
 right: 80%;
 } */
+    </style>
+  </head>
+  <body>
+    <div class="flex-div">
+      <div class="one-div">
+        <div class="parent">
+          <div class="ques-div">
+            this is question
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+          </div>
 
-  </style>
-</head>
-<body>
-  <div class="flex-div">
+          <div class="ans-div">
+            this is ans: <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.Maxime
+            aliquid ratione nesciunt quo reprehenderit incidunt maiores.
+          </div>
+        </div>
+        <div class="parent">
+          <div class="ques-div">
+            this is question
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+          </div>
 
-    <div class="one-div">
-      <div class="ques-div" id="ques-div">
-        this is question <i class="fa fa-question-circle" aria-hidden="true"></i>
+          <div class="ans-div">
+            this is ans: <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.Maxime
+            aliquid ratione nesciunt quo reprehenderit incidunt maiores.
+          </div>
+        </div>
+        <div class="parent">
+          <div class="ques-div">
+            this is question
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+          </div>
+
+          <div class="ans-div">
+            this is ans: <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.Maxime
+            aliquid ratione nesciunt quo reprehenderit incidunt maiores.
+          </div>
+        </div>
       </div>
 
-      <div class="ans-div" id="ans-div">
-        this is ans: <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.Maxime aliquid ratione nesciunt quo reprehenderit incidunt maiores.
-        
-      </div>
-
-      <div class="ques-div" id="ques-div">
-        this is question <i class="fa fa-question-circle" aria-hidden="true"></i>
-      </div>
-
-      <div class="ans-div" id="ans-div">
-        this is ans <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.Maxime aliquid ratione nesciunt quo reprehenderit incidunt maiores. 
-        
+      <div class="second-div">
+        <div class="text"></div>
       </div>
     </div>
 
-    <div class="second-div">
-      <div class="text">
-        
-      </div>
-    </div>
-    
-  </div>
+    <script>
+      var questions1 = document.querySelector("#ques-div1");
+      var questions2 = document.querySelectorAll("#ques-div2");
 
-  <script>
- 
-    var questions = document.querySelectorAll('#ques-div');
-    var answers = document.querySelectorAll('#ans-div'); 
-    var fontClass = document.querySelectorAll('.fa');
+      var answer1 = document.querySelector("#ans-div1");
+      var fontClass = document.querySelectorAll(".fa");
 
-//////////////////// append getters
-    var text = document.querySelector(".text");
-    var para = document.createElement('p');
-    var p_text = document.createTextNode('this is p tag added through js append method');
+      //////////////////// append getters
+      var text = document.querySelector(".text");
+      var para = document.createElement("p");
+      var p_text = document.createTextNode(
+        "this is p tag added through js append method"
+      );
 
-//////////////////// trying to append ans block
-    // divOne = document.querySelector('.one-div');
-    // ans_div =document.createElement("div");
-    // ans = document.createTextNode("lorem  kfk kf , e-0roo e0rroe0 roe r ork");
+      let allParents = document.querySelectorAll(".parent");
 
-    // console.log(ans_div.append(ans));
-    // console.log(ans_div);
+      // allParents.forEach((parent) => {
+       
+      // });
 
-    // divOne.insertBefore(ans_div, questions)
-    
-    // console.log(fontClass);
-    // var noNe = answers.style.display="none";
+      // fontClass[j].addEventListener('click', hideShow);
 
-    
- 
-// function hide(){
-//       if(noNe){
-//         console.log(answers.style.display="block");
-//       }
-//     else{
-//     console.log(noNe); 
-//     }
-// }
+      //////////////////// function onclick functionality
+      function hideShow() {
+        answer1.classList.toggle("show");
 
+        ///////////////////// loop for answers array
+        // for (i = 0; i < answers.length; i++) {
+        //   if ((answers[i].style.display = "none")) {
+        //     answers[i].style.display = "block";
+        //     text.append(p_text);
+        //   } else {
+        //     answers[i].style.display = "none";
+        //   }
+        // }
+      }
 
-// for(i=0; i<answers.length; i++){
-//   console.log(answers[i].style.display="block");
-// }
-
-/////////////////// loop for questions array
-for(j=0; j<questions.length; j++){
-  questions[j].addEventListener('click', hideShow);
-}
-for(j=0; j<fontClass.length; j++){
-  fontClass[j].addEventListener('click', hideShow);
-}
-// fontClass[j].addEventListener('click', hideShow);
-
-//////////////////// function onclick functionality
-function hideShow(){
-  ///////////////////// loop for answers array
-  for(i=0; i<answers.length; i++){
-    if(answers[i].style.display="none")
-    {
-      answers[i].style.display="block";
-      text.append(p_text);
-    }
-    else
-    {
-      answers[i].style.display="none";
-    }
-  } 
-}
-
-
-
-//  questions.addEventListener('click', hideShow);
-</script>
-</body>
+      //  questions.addEventListener('click', hideShow);
+    </script>
+  </body>
 </html>
