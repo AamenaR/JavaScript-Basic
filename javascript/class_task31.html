@@ -119,11 +119,11 @@ right: 80%;
     </div>
 
     <script>
-      var questions1 = document.querySelector("#ques-div1");
-      var questions2 = document.querySelectorAll("#ques-div2");
+      var question1 = document.querySelector(".ques-div");
+      // var question2 = document.querySelector("#ques-div2");
 
-      var answer1 = document.querySelector("#ans-div1");
-      var fontClass = document.querySelectorAll(".fa");
+      var answer = document.querySelector(".ans-div");
+      var fontClass = document.querySelector(".fa");
 
       //////////////////// append getters
       var text = document.querySelector(".text");
@@ -138,11 +138,12 @@ right: 80%;
        
       // });
 
-      // fontClass[j].addEventListener('click', hideShow);
+      question1.addEventListener('click', hideShow);
 
       //////////////////// function onclick functionality
       function hideShow() {
-        answer1.classList.toggle("show");
+        answer.classList.toggle("show");
+        // text.append(p_text);
 
         ///////////////////// loop for answers array
         // for (i = 0; i < answers.length; i++) {
