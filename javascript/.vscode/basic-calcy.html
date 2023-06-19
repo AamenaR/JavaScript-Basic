@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basic calcy functionality</title>
+</head>
+<body>
+  <h3>basic calculator functionality</h3>
+  <hr>
+  <br>
+  <input type="text" id="no1">
+  <br><br>
+  <input type="text" id="no2">
+  <br> <br>
+
+ <h1 class="show-ans"> <span>ans: </span></h1> <br> <br>
+
+  <button onclick="sum()">+</button>
+  <button onclick="sub()">-</button>
+  <button onclick="mutli()">*</button>
+  <button onclick="divide()">/</button>
+  <button onclick="module()">%</button>
+
+  <script>
+    inPut1 = document.querySelector('#no1');
+    inPut2 = document.getElementById('no2');
+    showAns = document.querySelector('.show-ans');
+
+    console.log(inPut1);
+    console.log(inPut2);
+    console.log(showAns);
+
+
+    // onclick btn functions
+    function sum(){
+      showAns.innerHTML = Number(inPut1.value) + Number(inPut2.value);
+    }
+
+    function sub(){
+      showAns.innerHTML = Number(inPut1.value) - Number(inPut2.value);
+    }
+
+
+    function mutli(){
+      showAns.innerHTML = Number(inPut1.value) * Number(inPut2.value);
+    }
+
+    function divide(){
+      showAns.innerHTML = Math.round(parseFloat(inPut1.value) / parseFloat(inPut2.value))
+    }
+
+    function module(){
+      showAns.innerHTML = Number(inPut1.value) % Number(inPut2.value);
+    }
+  </script>
+</body>
+
+
+</html>
